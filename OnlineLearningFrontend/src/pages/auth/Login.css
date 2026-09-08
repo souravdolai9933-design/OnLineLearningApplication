@@ -1,0 +1,40 @@
+.login-page {
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  background: var(--bg-primary); position: relative; overflow: hidden;
+}
+.login-bg-pattern {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 20% 50%, rgba(108,99,255,0.12) 0%, transparent 50%),
+              radial-gradient(ellipse at 80% 20%, rgba(168,85,247,0.08) 0%, transparent 50%),
+              radial-gradient(ellipse at 50% 80%, rgba(0,212,170,0.06) 0%, transparent 50%);
+}
+.login-card {
+  position: relative; z-index: 1; width: 100%; max-width: 420px;
+  background: var(--bg-card); backdrop-filter: blur(20px);
+  border: 1px solid var(--border-color); border-radius: var(--radius-xl);
+  padding: 2.5rem; box-shadow: var(--shadow-lg);
+}
+.login-header { text-align: center; margin-bottom: 2rem; }
+.login-logo { font-size: 3rem; display: block; margin-bottom: 0.75rem; }
+.login-title { font-size: var(--font-size-2xl); font-weight: 800; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.login-subtitle { color: var(--text-secondary); font-size: var(--font-size-sm); margin-top: 0.5rem; }
+.login-form { display: flex; flex-direction: column; gap: 1.25rem; }
+.input-with-icon {
+  display: flex; align-items: center; gap: 0.5rem;
+  background: var(--bg-input); border: 1px solid var(--border-color);
+  border-radius: var(--radius-md); padding: 0 0.85rem;
+  color: var(--text-muted); transition: border-color var(--transition-fast);
+}
+.input-with-icon:focus-within { border-color: var(--accent-primary); box-shadow: 0 0 0 3px var(--accent-primary-light); }
+.input-with-icon .form-input { border: none; background: transparent; padding: 11px 0; }
+.input-with-icon .form-input:focus { box-shadow: none; }
+.pw-toggle { background: transparent; color: var(--text-muted); padding: 4px; cursor: pointer; display: flex; }
+.pw-toggle:hover { color: var(--text-primary); }
+.login-btn {
+  width: 100%; padding: 12px; font-size: var(--font-size-md);
+  font-weight: 600; margin-top: 0.5rem;
+  background: var(--gradient-primary); border: none;
+}
+.login-btn:hover { transform: translateY(-1px); box-shadow: var(--shadow-glow); }
+.login-btn:disabled { opacity: 0.7; cursor: not-allowed; transform: none; }
+.login-footer { text-align: center; color: var(--text-muted); font-size: var(--font-size-xs); margin-top: 1.5rem; }

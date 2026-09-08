@@ -1,0 +1,18 @@
+## Visual Studio
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+
+## Build results
+[Bb]in/
+[Oo]bj/
+
+## Logs
+**/Logs/
+*.log
+
+## Node / Frontend
+**/node_modules/
+**/dist/

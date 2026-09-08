@@ -1,0 +1,4 @@
+.admin-layout { display: flex; min-height: 100vh; }
+.main-area { flex: 1; margin-left: var(--sidebar-width); transition: margin-left var(--transition-base); display: flex; flex-direction: column; }
+.sidebar-collapsed .main-area { margin-left: var(--sidebar-collapsed); }
+.main-content { flex: 1; padding: 1.5rem; animation: fadeIn 0.3s ease; }

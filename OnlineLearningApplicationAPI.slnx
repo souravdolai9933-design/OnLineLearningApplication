@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Library/">
+    <Project Path="OnlineLearning.Core/OnlineLearning.Core.csproj" />
+    <Project Path="OnlineLearning.Data/OnlineLearning.Data.csproj" />
+    <Project Path="OnlineLearning.Utilites/OnlineLearning.Utilites.csproj" />
+  </Folder>
+  <Folder Name="/Presentation/">
+    <Project Path="OnlineLearningApplicationAPI/OnlineLearningApplicationAPI.csproj" />
+  </Folder>
+</Solution>

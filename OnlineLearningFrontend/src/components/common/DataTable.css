@@ -1,0 +1,20 @@
+.datatable-wrapper { overflow: hidden; }
+.datatable-toolbar { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.25rem; border-bottom: 1px solid var(--border-color); gap: 1rem; flex-wrap: wrap; }
+.datatable-search { display: flex; align-items: center; gap: 0.5rem; flex: 1; max-width: 320px; background: var(--bg-input); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 0 0.75rem; color: var(--text-secondary); }
+.datatable-search .form-input { border: none; background: transparent; padding: 8px 0; }
+.datatable-search .form-input:focus { box-shadow: none; }
+.datatable-count { font-size: var(--font-size-sm); color: var(--text-muted); }
+.datatable-scroll { overflow-x: auto; }
+.datatable { width: 100%; border-collapse: collapse; }
+.datatable th { padding: 0.75rem 1.25rem; text-align: left; font-size: var(--font-size-xs); font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid var(--border-color); white-space: nowrap; user-select: none; }
+.datatable th.sortable { cursor: pointer; }
+.datatable th.sortable:hover { color: var(--text-primary); }
+.sort-icon { color: var(--accent-primary); }
+.datatable td { padding: 0.75rem 1.25rem; font-size: var(--font-size-sm); color: var(--text-primary); border-bottom: 1px solid var(--border-color); }
+.datatable tbody tr { transition: background var(--transition-fast); }
+.datatable tbody tr:hover { background: var(--bg-tertiary); }
+.datatable tbody tr:last-child td { border-bottom: none; }
+.datatable-empty { text-align: center; color: var(--text-muted); padding: 3rem 1rem !important; font-size: var(--font-size-sm); }
+.datatable-actions { display: flex; gap: 4px; }
+.datatable-pagination { display: flex; align-items: center; justify-content: center; gap: 0.75rem; padding: 0.75rem 1.25rem; border-top: 1px solid var(--border-color); }
+.page-info { font-size: var(--font-size-sm); color: var(--text-secondary); }
